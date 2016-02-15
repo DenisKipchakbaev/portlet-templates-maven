@@ -12,5 +12,5 @@ public class Views {
     /**
      * view.jsp from subdir directory
      */
-    public static final String ANOTHER_DIR_VIEW = "subdir/view";
+    public static final String ANOTHER_DIR_VIEW = "subdir/subDirView";
 }

@@ -1,3 +1,3 @@
 <%@include file="init.jsp"%>
 
-This is the <strong>Alternative View</strong>.
+<s:message code="text.altView"/>

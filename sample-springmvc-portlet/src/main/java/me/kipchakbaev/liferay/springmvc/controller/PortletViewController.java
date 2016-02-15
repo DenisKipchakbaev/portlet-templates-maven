@@ -32,8 +32,7 @@ public class PortletViewController {
 
     @RenderMapping
     public String defaultView() {
-    	LOGGER.info("render");
-        if (LOGGER.isTraceEnabled()) {
+    	if (LOGGER.isTraceEnabled()) {
             LOGGER.trace("Default View");
         }
 

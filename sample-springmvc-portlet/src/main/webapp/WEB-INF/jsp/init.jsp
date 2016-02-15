@@ -46,11 +46,11 @@
 
 <nav>
     <ul>
-        <li> <a href="<portlet:renderURL />"><s:message code="link.defaultView"/></a></li>
-        <li> <a href="${alternativeViewUrl}"> Alternative View </a></li>
-        <li> <a href="${actionOneUrl}"> Action One </a></li>
-        <li> <a href="${actionTwoUrl}"> Action Two </a></li>
-        <li> <a href="${resourceOneUrl}"> Resource One </a></li>
-        <li> <a href="${subDirViewURL}"> View from /subdir</a></li>
+        <li> <a href="<portlet:renderURL />"><s:message code="link.defaultView" text="Default View"/></a></li>
+        <li> <a href="${alternativeViewUrl}"><s:message code="link.altView"/></a></li>
+        <li> <a href="${actionOneUrl}"><s:message code="link.action1"/></a></li>
+        <li> <a href="${actionTwoUrl}"><s:message code="link.action2"/></a></li>
+        <li> <a href="${resourceOneUrl}"><s:message code="link.resource1"/></a></li>
+        <li> <a href="${subDirViewURL}"><s:message code="link.subDirView"/></a></li>
     </ul>
 </nav>

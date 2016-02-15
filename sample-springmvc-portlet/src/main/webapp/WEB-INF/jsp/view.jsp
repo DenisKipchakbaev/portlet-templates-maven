@@ -1,3 +1,3 @@
 <%@include file="init.jsp"%>
 
-This is the <strong>Default View</strong>.
+<s:message code="text.defaultView" text="This is the Default View." />
