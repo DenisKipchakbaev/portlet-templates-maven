@@ -19,7 +19,7 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 
 
-<%@ page contentType="text/html" pageEncoding="UTF-8" %>
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="UTF-8" %>
 
 <portlet:defineObjects />
 
