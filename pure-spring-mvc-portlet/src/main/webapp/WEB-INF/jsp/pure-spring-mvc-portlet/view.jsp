@@ -14,8 +14,10 @@
  */
 --%>
 
-<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
+<%@ page contentType="text/html" pageEncoding="UTF-8" %>
 
-<portlet:defineObjects />
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-This is the <b>sample-portlet1</b>.
+This is the <b>pure-spring-mvc-portlet</b> portlet.<br />
+
+<c:out escapeXml="true" value="${releaseInfo}" />.

@@ -1,4 +1,3 @@
-<%--
 /**
  * Copyright (c) 2000-present Liferay, Inc. All rights reserved.
  *
@@ -12,10 +11,25 @@
  * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
  * details.
  */
---%>
 
-<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
+package me.kipchakbaev.liferay;
 
-<portlet:defineObjects />
+import com.liferay.portal.kernel.util.ReleaseInfo;
 
-This is the <b>sample-portlet1</b>.
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.portlet.bind.annotation.RenderMapping;
+
+@Controller
+@RequestMapping("VIEW")
+public class PortletViewController {
+
+	@RenderMapping
+	public String question(Model model) {
+		model.addAttribute("releaseInfo", ReleaseInfo.getReleaseInfo());
+
+		return "pure-spring-mvc-portlet/view";
+	}
+
+}

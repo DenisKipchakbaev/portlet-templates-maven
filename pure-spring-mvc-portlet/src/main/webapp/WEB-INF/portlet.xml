@@ -2,21 +2,21 @@
 
 <portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
 	<portlet>
-		<portlet-name>sample-portlet1</portlet-name>
-		<display-name>sample-portlet1</display-name>
-		<portlet-class>com.liferay.util.bridges.mvc.MVCPortlet</portlet-class>
+		<portlet-name>pure-spring-mvc-portlet</portlet-name>
+		<display-name>pure-spring-mvc-portlet</display-name>
+		<portlet-class>org.springframework.web.portlet.DispatcherPortlet</portlet-class>
 		<init-param>
-			<name>view-template</name>
-			<value>/view.jsp</value>
+			<name>contextConfigLocation</name>
+			<value>/WEB-INF/spring-context/portlet/pure-spring-mvc-portlet-portlet.xml</value>
 		</init-param>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
 		</supports>
 		<portlet-info>
-			<title>sample-portlet1</title>
-			<short-title>sample-portlet1</short-title>
-			<keywords>sample-portlet1</keywords>
+			<title>pure-spring-mvc-portlet</title>
+			<short-title>pure-spring-mvc-portlet</short-title>
+			<keywords>pure-spring-mvc-portlet</keywords>
 		</portlet-info>
 		<security-role-ref>
 			<role-name>administrator</role-name>
